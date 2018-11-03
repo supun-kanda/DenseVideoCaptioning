@@ -16,7 +16,8 @@ def default_options():
     options = OrderedDict()
 
     ### DATA
-    options['feature_data_path'] = 'dataset/ActivityNet/features/sub_activitynet_v1-3_stride_64frame.c3d.hdf5' # download feature from ActivityNet website, and use a stride of 64 frames (shorten the unfolding steps for encoding LSTMs)
+    #options['feature_data_path'] = 'dataset/ActivityNet/features/sub_activitynet_v1-3_stride_64frame.c3d.hdf5' # download feature from ActivityNet website, and use a stride of 64 frames (shorten the unfolding steps for encoding LSTMs)
+    options['feature_data_path'] = '/mnt/data/c3d_features/feature.c3d.hdf5'
     options['localization_data_path'] = 'dataset/ActivityNet_Captions' 
     options['caption_data_root'] = 'dataset/ActivityNet_Captions/preprocess'
     options['vocab_file'] = os.path.join(options['caption_data_root'], 'word2id.json')

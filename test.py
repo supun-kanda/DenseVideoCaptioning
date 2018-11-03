@@ -95,7 +95,8 @@ def test(options):
     split = 'val'
 
     test_ids = json.load(open('dataset/ActivityNet_Captions/%s_ids.json'%split, 'r'))
-    features = h5py.File('dataset/ActivityNet/features/c3d/sub_activitynet_v1-3_stride_64frame.c3d.hdf5', 'r')
+    #features = h5py.File('dataset/ActivityNet/features/c3d/sub_activitynet_v1-3_stride_64frame.c3d.hdf5', 'r')
+    features = h5py.File('/mnt/data/c3d_features/feature.c3d.hdf5', 'r')
     stride = 4
     c3d_resolution = 16
     frame_rates = json.load(open('dataset/ActivityNet_Captions/video_fps.json'))

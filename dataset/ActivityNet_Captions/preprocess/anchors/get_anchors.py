@@ -21,7 +21,8 @@ tiou_threshold = 0.5
 num_scale = 1
 
 
-feature_path = '../../features/sub_activitynet_v1-3_stride_64frame.c3d.hdf5'
+#feature_path = '../../features/sub_activitynet_v1-3_stride_64frame.c3d.hdf5'
+feature_path = '/mnt/data/c3d_features/feature.c3d.hdf5'
 features = h5py.File(feature_path)
 
 splits = {'train':'train', 'val':'val_1', 'test':'val_2'}
